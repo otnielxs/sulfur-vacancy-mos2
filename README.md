@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="figures/coverr.png" width="600">
+  <img src="figures/coverr.png" width="800">
 </p>
 
 # Sulfur Vacancy in MoS₂ for O₂ and H₂O Adsorption Using CP2K
