@@ -1,0 +1,4 @@
+*.restart
+*.kp
+*.Hessian
+*.bak*
