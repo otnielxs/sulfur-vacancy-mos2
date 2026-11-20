@@ -116,18 +116,32 @@ These results should be interpreted as qualitative indications because the CI-NE
 ## Repository Structure
 
 ```
-mos2-vacancy-gas-sensing/
+sulfur-vacancy-mos2/
+│
 ├── README.md
+│
 ├── inputs/
 │   ├── pristine/
 │   ├── vacancy/
 │   ├── h2o/
 │   ├── o2/
 │   └── neb/
+│
 ├── structures/
-├── figures/
+│
 ├── scripts/
-└── results/
+│
+├── results/
+│   ├── dos/
+│   ├── bands/
+│   ├── neb/
+│   
+│
+├── figures/
+│
+├── docs/
+│
+└── .gitignore
 ```
 
 ## Software Used
