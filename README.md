@@ -65,7 +65,7 @@ at the sulfur-vacancy site.
 | Adsorbate | Eads (eV) |
 |---|---|
 | H₂O | −0.15 |
-| O₂ | **−3.21** |
+| **O₂** | **−3.21** |
 
 O₂ adsorption is more than twenty times stronger than H₂O adsorption, indicating strong defect-mediated selectivity toward oxygen.
 
