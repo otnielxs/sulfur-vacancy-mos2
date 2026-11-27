@@ -113,12 +113,18 @@ These results should be interpreted as qualitative indications because the CI-NE
 - The reported CI-NEB barrier corresponds to a partially converged pathway.
 - Larger supercells may further reduce defect-defect interactions due to periodic boundary conditions.
 
+
 ## Repository Structure
 
 ```
 sulfur-vacancy-mos2/
 │
 ├── README.md
+│
+├── database/
+│   ├── schema.sql
+│   ├── sample_data.sql
+│   └── queries.sql
 │
 ├── inputs/
 │   ├── pristine/
@@ -134,8 +140,7 @@ sulfur-vacancy-mos2/
 ├── results/
 │   ├── dos/
 │   ├── bands/
-│   ├── neb/
-│   
+│   └── neb/
 │
 ├── figures/
 │
@@ -148,6 +153,7 @@ sulfur-vacancy-mos2/
 
 - [CP2K](https://www.cp2k.org/)
 - Python (NumPy, Matplotlib)
+- PostgreSQL
 
 ## Reproducing the Results
 
@@ -157,5 +163,18 @@ cd inputs/
 mpirun -np 8 cp2k.psmp -i MoS2_optgeo.inp -o MoS2_optgeo.out &
 # Plotting
 python3 banddos.py
+# Database
+sudo -u postgres createdb mos2db
 
+sudo -u postgres psql \
+-d mos2db \
+-f database/schema.sql
+
+sudo -u postgres psql \
+-d mos2db \
+-f database/sample_data.sql
+
+sudo -u postgres psql \
+-d mos2db \
+-f database/queries.sql
 ```
